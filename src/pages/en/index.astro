@@ -1,0 +1,18 @@
+---
+import HeadingWithCTAButton from '../../components/HeadingWithCTAButton.astro';
+import Navbar from '../../components/Navbar.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Out of Your League" language="en">
+	<Navbar title="Out of Your League" i18n={{ menuItemHome: "Home", menuItemAbout: "About", menuItemPricing: "Pricing", menuItemTeam: "Team", menuItemContact: "Contact", menuLogInText: "Log in", menuOpenmenuText: "Open main menu", menuSignUpText: "Get started" }} />
+	<HeadingWithCTAButton
+		header="Out of Your League"
+		paragraph='A dating app for people that aspire for something greater...',
+		buttonText="Get started"
+		buttonLink="/register"
+	/>
+</Layout>
+
+<style>
+</style>
