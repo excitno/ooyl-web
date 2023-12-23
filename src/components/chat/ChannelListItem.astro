@@ -1,0 +1,12 @@
+---
+interface Props {
+    channelName: string;
+}
+
+const { channelName } = Astro.props;
+---
+
+
+<div class="bg-teal-dark cursor-pointer font-semibold py-1 px-4 text-gray-300">
+# {channelName}
+</div>
