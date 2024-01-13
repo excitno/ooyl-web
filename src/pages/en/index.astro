@@ -1,18 +1,24 @@
 ---
 import HeadingWithCTAButton from '../../components/HeadingWithCTAButton.astro';
-import Navbar from '../../components/Navbar.astro';
 import Layout from '../../layouts/Layout.astro';
+import Header from '../..//components/Header.astro';
+import Footer from '../..//components/Footer.astro';
+
+const title = "Out of Your League";
+const footerText = `© 2023-${new Date().getFullYear()} EXCIT. All rights reserved.`;
 ---
 
-<Layout title="Out of Your League" language="en">
-	<Navbar title="Out of Your League" i18n={{ menuItemHome: "Home", menuItemAbout: "About", menuItemPricing: "Pricing", menuItemTeam: "Team", menuItemContact: "Contact", menuLogInText: "Log in", menuOpenmenuText: "Open main menu", menuSignUpText: "Get started" }} />
+<Layout title={title} language="en">
+	<Header title={title} />
 	<HeadingWithCTAButton
-		header="Out of Your League"
+		header={title}
 		paragraph='A dating app for people that aspire for something greater...',
-		buttonText="Get started"
+		buttonText="Let's do it!"
 		buttonLink="/register"
 	/>
+	<Footer content={footerText} />
 </Layout>
 
-<style>
+<style type="scss">
+	
 </style>

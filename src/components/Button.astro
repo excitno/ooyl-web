@@ -1,0 +1,8 @@
+---
+// Button.astro
+const { text, type = 'button' } = Astro.props;
+---
+
+<button type={type} class="button">
+  {text}
+</button>

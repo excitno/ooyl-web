@@ -1,0 +1,10 @@
+---
+import Navbar from './Navbar.astro';
+
+// Header.astro
+const { title } = Astro.props;
+---
+
+<header>
+	<Navbar title={title} i18n={{ menuItemHome: "Home", menuItemAbout: "About", menuItemPricing: "Pricing", menuItemTeam: "Team", menuItemContact: "Contact", menuLogInText: "Log in", menuOpenmenuText: "Open main menu", menuSignUpText: "Get started" }} />
+</header>

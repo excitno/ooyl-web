@@ -1,0 +1,6 @@
+---
+// Link.astro
+const { href, text } = Astro.props;
+---
+
+<a href={href} target="_blank" aria-label={text} title={text}>{text}</a>
